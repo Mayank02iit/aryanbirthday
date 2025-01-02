@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- <audio id="surprise-audio" muted>
+        <source src="/public/jumpscareSound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio> -->
+
+    <div class="birthday">
+        <h1>Happy Birthday Aryann!!</h1>
+        <h3>Sorry for the Late Wishes</h3>
+        <h2>I have a suprise for you click on the click below!!</h2>
+        
+            <button type="submit" id="play-button">Click Here!!</button>
+        
+    </div>
+    <script>
+        const playbutton = document.getElementById("play-button")
+        playbutton.addEventListener("click",()=>{
+            window.location.href = '/aryan_my_nigga'
+        });
+    </script>
+    <!-- <script>
+            play-button.addEventListener('click', () => {
+            // Play the audio
+            audio.muted = false; // Unmute the audio
+            audio.play().then(() => {
+                console.log('Audio is playing!');
+                // Redirect after a short delay
+                setTimeout(() => {
+                    window.location.href = '/aryan/nigga'; // Navigate to the next page
+                }, 2000); // Adjust delay as needed
+            }).catch(err => {
+                console.error('Audio playback failed:', err);
+                // Fallback: Redirect immediately if audio fails
+                window.location.href = '/aryan/nigga';
+            });
+        });
+
+
+      </script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Page</title>
+    <link rel="stylesheet" href="stylus.css">
+</head>
+<body>
+    <img src= "jumpscareimg.png" alt="Surprise Image" id="surprise-image" />
+    <audio id="surprise-audio" autoplay loop muted>
+        <source src="jumpscareSound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('surprise-audio');
+            
+            // Unmute the audio after page load (necessary for autoplay in most browsers)
+            audio.muted = false; 
+            audio.play().then(() => {
+                console.log('Audio is playing!');
+            }).catch(err => {
+                console.error('Audio playback failed:', err);
+            });
+        };
+    </script>
+
+</body>
+</html>
